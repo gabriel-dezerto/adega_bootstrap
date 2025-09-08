@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Clube da Adega | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="shortcut icon" type="imagex/png" href="../image/shortcut_icon_logo.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="inicio">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../image/site_logo.png" style="width: 80px" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Populares</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categorias
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="cerveja.html">Cerveja</a>
+                </li>
+                <li><a class="dropdown-item" href="vinho.html">Vinho</a></li>
+                <li><a class="dropdown-item" href="gin.html">Gin</a></li>
+                <li><a class="dropdown-item" href="vodka.html">Vodka</a></li>
+                <li>
+                  <a class="dropdown-item" href="whisky.html">Whisky</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--slider imagens-->
+  <div class="container" style="margin-top: 45px;">
+    <div class="row">
+      <div class="col" style="margin-top: 15px;">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container" style="margin-top: 45px;">
+    <div class="row">
+      <div class="col-6 col-md-3">
+        <div class="card text-center card_categ"> 
+            <img src="../image/sem_fundo/cerveja_heineken-removebg-preview.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Cerveja</h3>
+            <a href="cerveja.html" class="btn btn-primary btn_card">Ver</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card text-center card_categ">
+            <img src="../image/sem_fundo/vodka_absolut-removebg-preview.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Vodka</h3>
+            <a href="vodka.html" class="btn btn-primary btn_card">Ver</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card text-center card_categ">
+            <img src="../image/sem_fundo/vinho-gato-negro-malbec-removebg-preview.png" class="card-img-top " alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Vinho</h3>
+            <a href="vinho.html" class="btn btn-primary btn_card">Ver</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card text-center card_categ">
+            <img src="../image/sem_fundo/whisky_black_label-removebg-preview.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Whisky</h3>
+            <a href="whisky.html" class="btn btn-primary btn_card">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container" style="margin-top: 45px;">
+    <div class="row text-center">
+      <h1 style="color: #0d6efd"><b>Destaques</b></h1>
+      <hr style="color: #0d6efd;">
+      <div class="col">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    style="padding: 15px; background-color: black; color: aliceblue;">
+    <p class="col-md-4 mb-0 ">© 2025 Company, Inc</p> <a href="/"
+      class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+      aria-label="Bootstrap"> <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+        <img src="../image/shortcut_icon_logo.png" style="width: 60px;">
+      </svg> </a>
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="#inicio" class="nav-link px-2" style="color: aliceblue;">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: aliceblue;">Populares</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+          style="color: aliceblue;">
+          Categorias
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="cerveja.html">Cerveja</a>
+          </li>
+          <li><a class="dropdown-item" href="vinho.html">Vinho</a></li>
+          <li><a class="dropdown-item" href="gin.html">Gin</a></li>
+          <li><a class="dropdown-item" href="vodka.html">Vodka</a></li>
+          <li>
+            <a class="dropdown-item" href="whisky.html">Whisky</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: aliceblue;">Contato</a></li>
+    </ul>
+  </footer>
+
+  <!--Scripts do site-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>
