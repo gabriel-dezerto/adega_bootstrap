@@ -47,3 +47,12 @@ header{
     border: none;
     color: black;
 }
+
+
+
+/*Footer*/
+footer{
+    padding: 15px; 
+    background-color: black; 
+    color: aliceblue;
+    height: 200px;
