@@ -264,19 +264,19 @@
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="../image/img_slider/destac_gin.png" class="d-block w-100 h-100" alt="...">
+              <img src="../image/img_slider/destac_gin.png" class="d-block w-100 h-100" data-bs-toggle="modal" data-bs-target="#modalGin">
             </div>
             <div class="carousel-item">
-              <img src="../image/img_slider/destak_vinhos.png" class="d-block w-100 h-100" alt="...">
+              <img src="../image/img_slider/destak_vinhos.png" class="d-block w-100 h-100" data-bs-toggle="modal" data-bs-target="#modalVinho">
             </div>
             <div class="carousel-item">
-              <img src="../image/img_slider/destac_heineken.png" class="d-block w-100 h-100" alt="...">
+              <img src="../image/img_slider/destac_heineken.png" class="d-block w-100 h-100" data-bs-toggle="modal" data-bs-target="#modalHein">
             </div>
             <div class="carousel-item">
-              <img src="../image/img_slider/destac_vodka.png" class="d-block w-100 h-100" alt="...">
+              <img src="../image/img_slider/destac_vodka.png" class="d-block w-100 h-100" data-bs-toggle="modal" data-bs-target="#modalVodka">
             </div>
             <div class="carousel-item">
-              <img src="../image/img_slider/destak_blackLabel.png" class="d-block w-100 h-100" alt="...">
+              <img src="../image/img_slider/destak_blackLabel.png" class="d-block w-100 h-100" data-bs-toggle="modal" data-bs-target="#modalBlaLab">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -312,8 +312,8 @@
           </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-            style="background-color: red;">Fechar</button>
+          <button type="button" class="btn" data-bs-dismiss="modal"
+            style="background-color: red; color: white;">Fechar</button>
           <button type="button" class="btn btn-primary" id="btnCarrinho"
             style="background-color: #9e6e1c; border: none;">Adicionar ao carrinho</button>
         </div>
@@ -337,8 +337,8 @@
           momentos. Clique e conheça agora a nossa seção de vinhos.
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-            style="background-color: red;">Fechar</button>
+          <button type="button" class="btn" data-bs-dismiss="modal"
+            style="background-color: red; color: white;">Fechar</button>
           <a href="vinho.html">
             <button type="button" class="btn btn-primary" id="btnCarrinho"
               style="background-color: #9e6e1c; border: none;">Verificar vinhos</button>
@@ -363,8 +363,8 @@
           Clique e conheça agora a nossa seção de cervejas.
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-            style="background-color: red;">Fechar</button>
+          <button type="button" class="btn" data-bs-dismiss="modal"
+            style="background-color: red; color: white;">Fechar</button>
           <a href="cerveja.html">
             <button type="button" class="btn btn-primary" id="btnCarrinho"
               style="background-color: #9e6e1c; border: none;">Verificar cervejas</button>
@@ -395,8 +395,8 @@
           </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-            style="background-color: red;">Fechar</button>
+          <button type="button" class="btn" data-bs-dismiss="modal"
+            style="background-color: red; color: white;">Fechar</button>
           <button type="button" class="btn btn-primary" id="btnCarrinho2"
             style="background-color: #9e6e1c; border: none;">Adicionar ao carrinho</button>
         </div>
@@ -425,8 +425,8 @@
           </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-            style="background-color: red;">Fechar</button>
+          <button type="button" class="btn" data-bs-dismiss="modal"
+            style="background-color: red; color: white;">Fechar</button>
           <button type="button" class="btn btn-primary" id="btnCarrinho3"
             style="background-color: #9e6e1c; border: none;">Adicionar ao carrinho</button>
         </div>
@@ -469,7 +469,21 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
-  <script src="../js/index.js"></script>
+  <script>
+    //MENSAGEM DO CARRINHO - HOME
+    // Mensagem de adicionar no carrinho - Gin
+    document.getElementById("btnCarrinho").addEventListener('click', function () {
+      document.getElementById("mensagemCarrinho").style.display = "block";
+    });
+    // Mensagem dde adicionar no carrinho - Vodka
+    document.getElementById("btnCarrinho2").addEventListener('click', function () {
+      document.getElementById("mensagemCarrinho2").style.display = "block";
+    });
+    // Mensagem dde adicionar no carrinho - Whisky
+    document.getElementById("btnCarrinho3").addEventListener('click', function () {
+      document.getElementById("mensagemCarrinho3").style.display = "block";
+    });
+  </script>
 </body>
 
 
