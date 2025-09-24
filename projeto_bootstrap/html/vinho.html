@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Clube da Adega | Home</title>
+    <title>Clube da Adega | Vinhos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
     <link rel="shortcut icon" type="imagex/png" href="../image/shortcut_icon_logo.png" />
@@ -14,9 +14,9 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="inicio">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../image/site_logo.png" style="width: 80px" /></a>
+                <a class="navbar-brand" href="index.html"><img src="../image/site_logo.png" style="width: 80px" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -45,7 +45,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="contato.html">Contato</a>
                         </li>
                     </ul>
 
@@ -54,11 +54,359 @@
         </nav>
     </header>
 
+    <div class="container text-center" style="margin-top: 40px; margin-bottom: 40px;">
+        <div class="row text-center">
+            <div class="col">
+                <h1 class="titulo_categ"><u>VINHOS</u></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção da Gato Negro -->
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="marca_nome" style="color: rgb(27, 0, 11);">Gato Negro</h1>
+            <hr style="height: 5px; border: 3px solid rgb(27, 0, 11);">
+            <div class="col-6 col-md-3">
+                <div class="card card_prod">
+                    <img src="../image/sem_fundo/vinho-gato-negro-merlot-removebg-preview.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Gato Negro Merlot</h5>
+                        <p class="card-text">R$ 49,99</p>
+                        <button class="btn btn_compra" data-bs-toggle="modal"
+                            data-bs-target="#modalGNMerlot">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card card_prod">
+                    <img src="../image/sem_fundo/vinho-gato-negro-malbec-removebg-preview.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Gato Negro Malbec</h5>
+                        <p class="card-text">R$ 49,99</p>
+                        <button class="btn btn_compra" data-bs-toggle="modal"
+                        data-bs-target="#modalGNMalbec">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card card_prod">
+                    <img src="../image/sem_fundo/Vinho-Tinto-Cabernet-Sauvignon-Gato-Negro-750ml-removebg-preview.png"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Gato Negro Cabernet</h5>
+                        <p class="card-text">R$ 49,99</p>
+                        <button class="btn btn_compra" data-bs-toggle="modal"
+                            data-bs-target="#modalGNCabernet">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modais da Gato Negro -->
+    <!--Merlot-->
+    <div class="modal fade" id="modalGNMerlot" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: bisque;">
+                <div class="modal-header">
+                    <img src="../image/sem_fundo/vinho-gato-negro-merlot-removebg-preview.png"
+                        style="width: 60px; height: 60px;">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Gato Negro Merlot</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    O Gato Negro Merlot é um vinho tinto chileno da Viña San Pedro, com graduação alcoólica em torno de
+                    13-13,6%. Ele possui coloração vermelho rubi com reflexos violáceos, aroma frutado de ameixa e
+                    frutas pretas, com notas sutis de baunilha e especiarias. No paladar é de corpo médio, taninos
+                    suaves, equilibrado, final agradável e fácil de beber.
+                    <br>
+                    <br>
+                    R$ 49,99
+                    <p id="mensagemCarrinho-gn-merlot" style="color: blue; display: none; margin-top: 10px;">
+                        Produto adicionado com sucesso!!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal"
+                        style="background-color: red; color: white;">Fechar</button>
+                    <button type="button" class="btn" id="btnCarrinho-gn-merlot"
+                        style="background-color: #9e6e1c; border: none; color: white;">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Cabernet-->
+    <div class="modal fade" id="modalGNCabernet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: bisque;">
+                <div class="modal-header">
+                    <img src="../image/sem_fundo/Vinho-Tinto-Cabernet-Sauvignon-Gato-Negro-750ml-removebg-preview.png"
+                        style="width: 60px; height: 60px;">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Gato Negro Cabernet</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    O Gato Negro Cabernet Sauvignon é um vinho tinto chileno de corpo médio, com coloração vermelho-rubí
+                    escuro e reflexos violáceos. No nariz, exibe aromas de frutas vermelhas maduras, cassis, baunilha e
+                    chocolate. No paladar, é frutado, com taninos suaves e final agradável. Ideal para acompanhar carnes
+                    vermelhas, cordeiro, massas ao molho encorpado ou queijos médios.
+                    <br>
+                    <br>
+                    R$ 49,99
+                    <p id="mensagemCarrinho-gn-cabernet" style="color: blue; display: none; margin-top: 10px;">
+                        Produto adicionado com sucesso!!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal"
+                        style="background-color: red; color: white;">Fechar</button>
+                    <button type="button" class="btn" id="btnCarrinho-gn-cabernet"
+                        style="background-color: #9e6e1c; border: none; color: white;">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Malbec-->
+    <div class="modal fade" id="modalGNMalbec" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: bisque;">
+                <div class="modal-header">
+                    <img src="../image/sem_fundo/vinho-gato-negro-malbec-removebg-preview.png"
+                        style="width: 60px; height: 60px;">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Gato Negro Malbec</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    O Gato Negro Malbec é um vinho tinto frutado de corpo médio, de coloração vermelho profundo com
+                    reflexos violáceos intensos. No aroma, destacam-se frutas negras maduras, como amoras e ameixas, com
+                    notas sutis de especiarias. No paladar, apresenta taninos macios, textura agradável e final
+                    persistente, sendo versátil e fácil de beber. Ideal para acompanhar carnes grelhadas, queijos
+                    semiduros ou pratos com molhos mais encorpados.
+                    <br>
+                    <br>
+                    R$ 49,99
+                    <p id="mensagemCarrinho-gn-malbec" style="color: blue; display: none; margin-top: 10px;">
+                        Produto adicionado com sucesso!!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal"
+                        style="background-color: red; color: white;">Fechar</button>
+                    <button type="button" class="btn" id="btnCarrinho-gn-malbec"
+                        style=" background-color: #9e6e1c; border: none; color: white;">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Seção da Santa Helena -->
+    <div class="container" style="margin-top: 30px;">
+        <div class="row text-center">
+            <h1 class="marca_nome" style="color: rgb(202, 148, 0);">Santa Helena</h1>
+            <hr style="height: 5px; border: 3px solid rgb(202, 148, 0);">
+            <div class="col-6 col-md-3">
+                <div class="card card_prod">
+                    <img src="../image/sem_fundo/vinho-santa-helena-merlot-removebg-preview.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Santa Helena Merlot</h5>
+                        <p class="card-text">R$ 39,99</p>
+                        <button class="btn btn_compra" data-bs-toggle="modal"
+                            data-bs-target="#modalSHMerlot">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card card_prod">
+                    <img src="../image/sem_fundo/Vinho-Tinto-Cabernet-Sauvignon-Gato-Negro-750ml-removebg-preview.png"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Santa Helena Cabernet</h5>
+                        <p class="card-text">R$ 34,99</p>
+                        <button class="btn btn_compra" data-bs-toggle="modal"
+                            data-bs-target="#modalSHCabernet">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card card_prod">
+                    <img src="../image/sem_fundo/vinho-santa-helena-blanc-removebg-preview.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Santa Helena Blanc</h5>
+                        <p class="card-text">R$ 44,99</p>
+                        <button class="btn btn_compra" data-bs-toggle="modal"
+                            data-bs-target="#modalSHBlanc">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modais da Santa Helena -->
+    <!--Merlot-->
+    <div class="modal fade" id="modalSHMerlot" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: bisque;">
+                <div class="modal-header">
+                    <img src="../image/sem_fundo/vinho-santa-helena-merlot-removebg-preview.png"
+                        style="width: 60px; height: 60px;">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Santa Helena Merlot</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    O Santa Helena Reservado Merlot é um vinho tinto chileno do Vale Central, de corpo médio, com cor
+                    vermelho-rubi intensa marcada por reflexos violáceos. No nariz aparecem aromas de ameixas e amoras
+                    maduras com sutis toques de especiarias e baunilha. No paladar, seus taninos são suaves, bem
+                    equilibrado, com final redondo. É ótimo para acompanhar carnes vermelhas grelhadas, pratos de porco
+                    ou queijos — ideal para momentos descontraídos.
+                    <br>
+                    <br>
+                    R$ 39,99
+                    <p id="mensagemCarrinho-sh-merlot" style="color: blue; display: none; margin-top: 10px;">
+                        Produto adicionado com sucesso!!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal"
+                        style="background-color: red; color: white;">Fechar</button>
+                    <button type="button" class="btn" id="btnCarrinho-sh-merlot"
+                        style="background-color: #9e6e1c; border: none; color: white;">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Cabernet-->
+    <div class="modal fade" id="modalSHCabernet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: bisque;">
+                <div class="modal-header">
+                    <img src="../image/sem_fundo/vinho-santa-helena-cabernet-sauvignon-750ml-removebg-preview.png"
+                        style="width: 60px; height: 60px;">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Santa Helena Cabernet</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    O Santa Helena Reservado Cabernet Sauvignon é um vinho tinto chileno do Vale Central, com cor rubi
+                    intensa e aromas de frutas vermelhas maduras, como ameixa e cassis, acompanhados por toques sutis de
+                    especiarias. No paladar, apresenta taninos suaves, boa acidez e um final agradável e redondo,
+                    tornando-o ideal para acompanhar carnes vermelhas grelhadas, risotos e massas com molhos encorpados.
+                    <br>
+                    <br>
+                    R$ 34,99
+                    <p id="mensagemCarrinho-sh-cabernet" style="color: blue; display: none; margin-top: 10px;">
+                        Produto adicionado com sucesso!!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal"
+                        style="background-color: red; color: white;">Fechar</button>
+                    <button type="button" class="btn" id="btnCarrinho-sh-cabernet"
+                        style="background-color: #9e6e1c; border: none; color: white;">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Blanc-->
+    <div class="modal fade" id="modalSHBlanc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: bisque;">
+                <div class="modal-header">
+                    <img src="../image/sem_fundo/vinho-santa-helena-blanc-removebg-preview.png"
+                        style="width: 60px; height: 60px;">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Santa Helena Blanc</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    O Santa Helena Reservado Sauvignon Blanc é um vinho branco chileno leve e refrescante, com cor
+                    amarelo pálido e reflexos esverdeados. Apresenta aromas intensos de frutas tropicais como abacaxi,
+                    manga e toranja, além de notas herbáceas sutis. No paladar, destaca-se pela acidez vibrante e final
+                    frutado, tornando-o ideal para acompanhar pratos como peixes, frutos do mar, saladas e queijos
+                    frescos.
+                    <br>
+                    <br>
+                    R$ 44,99
+                    <p id="mensagemCarrinho-sh-blanc" style="color: blue; display: none; margin-top: 10px;">
+                        Produto adicionado com sucesso!!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal"
+                        style="background-color: red; color: white;">Fechar</button>
+                    <button type="button" class="btn" id="btnCarrinho-sh-blanc"
+                        style="background-color: #9e6e1c; border: none; color: white;">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
+        <p class="col-md-4 mb-0 ">© 2025 Company, Inc</p> <a href="index.html"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+            aria-label="Bootstrap"> <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+                <img src="../image/shortcut_icon_logo.png" style="width: 60px;">
+            </svg> </a>
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2" style="color: aliceblue;">Home</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: aliceblue;">
+                    Categorias
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="cerveja.html">Cerveja</a>
+                    </li>
+                    <li><a class="dropdown-item" href="vinho.html">Vinho</a></li>
+                    <li><a class="dropdown-item" href="gin.html">Gin</a></li>
+                    <li><a class="dropdown-item" href="vodka.html">Vodka</a></li>
+                    <li>
+                        <a class="dropdown-item" href="whisky.html">Whisky</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="contato.html" class="nav-link px-2" style="color: aliceblue;">Contato</a></li>
+        </ul>
+    </footer>
+
 
     <!--Scripts do site-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+    <script>
+        //MENSAGEM DO CARRINHO - Vinhos
+        //PRODUTOS - GATO NEGRO
+        // Mensagem de adicionar no carrinho - Merlot
+        document.getElementById("btnCarrinho-gn-merlot").addEventListener('click', function () {
+            document.getElementById("mensagemCarrinho-gn-merlot").style.display = "block";
+        });
+        // Mensagem de adicionar no carrinho - Cabernet
+        document.getElementById("btnCarrinho-gn-cabernet").addEventListener('click', function () {
+            document.getElementById("mensagemCarrinho-gn-cabernet").style.display = "block";
+        });
+        // Mensagem de adicionar no carrinho - Malbec
+        document.getElementById("btnCarrinho-gn-malbec").addEventListener('click', function () {
+            document.getElementById("mensagemCarrinho-gn-malbec").style.display = "block";
+        });
+
+        //PRODUTOS - SANTA HELENA
+        // Mensagem de adicionar no carrinho - Merlot
+        document.getElementById("btnCarrinho-sh-merlot").addEventListener('click', function () {
+            document.getElementById("mensagemCarrinho-sh-merlot").style.display = "block";
+        });
+        // Mensagem de adicionar no carrinho - Cabernet
+        document.getElementById("btnCarrinho-sh-cabernet").addEventListener('click', function () {
+            document.getElementById("mensagemCarrinho-sh-cabernet").style.display = "block";
+        });
+        // Mensagem de adicionar no carrinho - Blanc
+        document.getElementById("btnCarrinho-sh-blanc").addEventListener('click', function () {
+            document.getElementById("mensagemCarrinho-sh-blanc").style.display = "block";
+        });
+    </script>
 
 </body>
 

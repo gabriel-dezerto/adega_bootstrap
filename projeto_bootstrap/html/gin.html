@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Clube da Adega | Home</title>
+    <title>Clube da Adega | Gin's</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
     <link rel="shortcut icon" type="imagex/png" href="../image/shortcut_icon_logo.png" />
@@ -14,9 +14,9 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="inicio">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../image/site_logo.png" style="width: 80px" /></a>
+                <a class="navbar-brand" href="index.html"><img src="../image/site_logo.png" style="width: 80px" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -45,7 +45,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="contato.html">Contato</a>
                         </li>
                     </ul>
 
@@ -54,11 +54,272 @@
         </nav>
     </header>
 
+    <div class="container text-center" style="margin-top: 40px; margin-bottom: 40px;">
+        <div class="row text-center">
+            <div class="col">
+                <h1 class="titulo_categ"><u>GIN's</u></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção da Beefeater -->
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="marca_nome" style="color: rgb(77, 2, 2);">Beefeater</h1>
+            <hr style="height: 5px; border: 3px solid rgb(77, 2, 2);">
+            <div class="col-6 col-md-3">
+                <div class="card card_prod">
+                    <img src="../image/sem_fundo/gin_beef-removebg-preview.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Beefeater London Dry Gin</h5>
+                        <p class="card-text">R$ 119,99</p>
+                        <button class="btn btn_compra" data-bs-toggle="modal"
+                            data-bs-target="#modalBeefTrad">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card card_prod">
+                    <img src="../image/sem_fundo/gin_beef_pink-removebg-preview.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Beefeater Pink Strawberry</h5>
+                        <p class="card-text">R$ 104,99</p>
+                        <button class="btn btn_compra" data-bs-toggle="modal"
+                            data-bs-target="#modalBeefPink">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modais da Beefeater -->
+    <!-- Tradicional -->
+    <div class="modal fade" id="modalBeefTrad" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: bisque;">
+                <div class="modal-header">
+                    <img src="../image/sem_fundo/gin_beef-removebg-preview.png" style="width: 60px; height: 60px;">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Beefeater London Dry Gin</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    O Beefeater London Dry Gin é um clássico inglês, destilado em Londres desde o século XIX. Com forte
+                    presença de zimbro, notas cítricas vibrantes e toques de especiarias, é um gin seco, equilibrado e
+                    versátil, ideal para coquetéis tradicionais como Gin-Tônica e Negroni.
+                    <br>
+                    <br>
+                    R$ 119,99
+                    <p id="mensagemCarrinho-beef-trad" style="color: blue; display: none; margin-top: 10px;">
+                        Produto adicionado com sucesso!!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal"
+                        style="background-color: red; color: white;">Fechar</button>
+                    <button type="button" class="btn" id="btnCarrinho-beef-trad"
+                        style="background-color: #9e6e1c; border: none; color: white;">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pink -->
+    <div class="modal fade" id="modalBeefPink" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: bisque;">
+                <div class="modal-header">
+                    <img src="../image/sem_fundo/gin_beef_pink-removebg-preview.png"
+                        style="width: 60px; height: 60px;">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Beefeater Pink Strawberry</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    O Beefeater Pink Strawberry é uma versão moderna e vibrante do clássico London Dry. Infusionado com
+                    morangos naturais, combina o sabor fresco e frutado da fruta com a base seca de zimbro e especiarias
+                    do Beefeater, resultando em um gin leve, aromático e refrescante, perfeito para drinques
+                    descontraídos.
+                    <br>
+                    <br>
+                    R$ 104,99
+                    <p id="mensagemCarrinho-beef-pink"
+                        style="color: rgb(231, 0, 162); display: none; margin-top: 10px;">
+                        Produto adicionado com sucesso!!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal"
+                        style="background-color: red; color: white;">Fechar</button>
+                    <button type="button" class="btn" id="btnCarrinho-beef-pink"
+                        style="background-color: #9e6e1c; border: none; color: white;">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Seção da Tanqueray -->
+    <div class="container" style="margin-top: 30px;">
+        <div class="row text-center">
+            <h1 class="marca_nome" style="color: green;">Tanqueray</h1>
+            <hr style="height: 5px; border: 3px solid green;">
+            <div class="col-6 col-md-3">
+                <div class="card card_prod">
+                    <img src="../image/sem_fundo/gin_tanque-removebg-preview.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Tanqueray London Dry Gin</h5>
+                        <p class="card-text">R$ 129,99</p>
+                        <button class="btn btn_compra" data-bs-toggle="modal"
+                            data-bs-target="#modalTank">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modais da Tanqueray -->
+    <!--Garrafa-->
+    <div class="modal fade" id="modalTank" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: bisque;">
+                <div class="modal-header">
+                    <img src="../image/sem_fundo/gin_tanque-removebg-preview.png" style="width: 60px; height: 60px;">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tanqueray London Dry Gin</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    O Tanqueray London Dry Gin é um dos gins mais clássicos e premiados do mundo. Produzido com zimbro
+                    dominante, notas cítricas sutis e um leve toque de especiarias, oferece um perfil seco, equilibrado
+                    e sofisticado. É a escolha ideal para coquetéis tradicionais como o Gin-Tônica e o Dry Martini.
+                    <br>
+                    <br>
+                    R$ 129,99
+                    <p id="mensagemCarrinho-tank" style="color: blue; display: none; margin-top: 10px;">
+                        Produto adicionado com sucesso!!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal"
+                        style="background-color: red; color: white;">Fechar</button>
+                    <button type="button" class="btn" id="btnCarrinho-tank"
+                        style="background-color: #9e6e1c; border: none; color: white;">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Seção da Bombay -->
+    <div class="container" style="margin-top: 30px;">
+        <div class="row text-center">
+            <h1 class="marca_nome" style="color: rgb(0, 81, 231);">Bombay</h1>
+            <hr style="height: 5px; border: 3px solid rgb(0, 81, 231);">
+            <div class="col-6 col-md-3">
+                <div class="card card_prod">
+                    <img src="../image/sem_fundo/gin_bombay-removebg-preview.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Bombay Sapphire London Dry Gin</h5>
+                        <p class="card-text">R$ 119,99</p>
+                        <button class="btn btn_compra" data-bs-toggle="modal"
+                            data-bs-target="#modalBombay">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modais da Bombay -->
+    <!-- Garrafa -->
+    <div class="modal fade" id="modalBombay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: bisque;">
+                <div class="modal-header">
+                    <img src="../image/sem_fundo/gin_bombay-removebg-preview.png"
+                        style="width: 60px; height: 60px;">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Bombay Sapphire London Dry Gin</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    O Bombay Sapphire é um London Dry Gin inglês premium, feito com 10 botânicos exóticos cuidadosamente
+                    selecionados. Seu perfil traz notas cítricas brilhantes, toque suave de especiarias e um frescor
+                    herbal delicado, com um final limpo e equilibrado — ideal para drinks clássicos como Gin & Tonic ou
+                    Martini.
+                    <br>
+                    <br>
+                    R$ 119,99
+                    <p id="mensagemCarrinho-bombay" style="color: blue; display: none; margin-top: 10px;">
+                        Produto adicionado com sucesso!!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal"
+                        style="background-color: red; color: white;">Fechar</button>
+                    <button type="button" class="btn" id="btnCarrinho-bombay"
+                        style="background-color: #9e6e1c; border: none; color: white;">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
+        <p class="col-md-4 mb-0 ">© 2025 Company, Inc</p> <a href="index.html"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+            aria-label="Bootstrap"> <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+                <img src="../image/shortcut_icon_logo.png" style="width: 60px;">
+            </svg> </a>
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2" style="color: aliceblue;">Home</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: aliceblue;">
+                    Categorias
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="cerveja.html">Cerveja</a>
+                    </li>
+                    <li><a class="dropdown-item" href="vinho.html">Vinho</a></li>
+                    <li><a class="dropdown-item" href="gin.html">Gin</a></li>
+                    <li><a class="dropdown-item" href="vodka.html">Vodka</a></li>
+                    <li>
+                        <a class="dropdown-item" href="whisky.html">Whisky</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="contato.html" class="nav-link px-2" style="color: aliceblue;">Contato</a></li>
+        </ul>
+    </footer>
+
 
     <!--Scripts do site-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+    <script>
+        //MENSAGEM DO CARRINHO - Gin
+        //PRODUTOS - Beefeater
+        // Mensagem de adicionar no carrinho - Tradicional
+        document.getElementById("btnCarrinho-beef-trad").addEventListener('click', function () {
+            document.getElementById("mensagemCarrinho-beef-trad").style.display = "block";
+        });
+        // Mensagem de adicionar no carrinho - Pink
+        document.getElementById("btnCarrinho-beef-pink").addEventListener('click', function () {
+            document.getElementById("mensagemCarrinho-beef-pink").style.display = "block";
+        });
+
+        //PRODUTOS - Tanqueray
+        // Mensagem de adicionar no carrinho - Garrafa
+        document.getElementById("btnCarrinho-tank").addEventListener('click', function () {
+            document.getElementById("mensagemCarrinho-tank").style.display = "block";
+        });
+
+        //PRODUTOS - Bombay
+        // Mensagem de adicionar no carrinho - Garrafa
+        document.getElementById("btnCarrinho-bombay").addEventListener('click', function () {
+            document.getElementById("mensagemCarrinho-bombay").style.display = "block";
+        });
+    </script>
 
 </body>
 
